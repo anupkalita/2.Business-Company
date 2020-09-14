@@ -17,10 +17,10 @@
             <h1><i class="fas fa-book-open"></i><span>Edge</span>Ledger</h1>
 
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">What</a></li>
-                <li><a href="#">Who</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#landing-section">Home</a></li>
+                <li><a href="#what-section">What</a></li>
+                <li><a href="#who-section">Who</a></li>
+                <li><a href="#contact-section">Contact</a></li>
             </ul>
         </div>
 
@@ -29,7 +29,7 @@
             <div class="text">
                 <h1>The Sky Is The Limit</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos doloremque fugit unde </p>
-                <a href="#">Read More</a>
+                <a href="#what">Read More</a>
             </div>    
         </div>
  
@@ -41,21 +41,21 @@
         <h1><span>What</span> We Do</h1>
         <div class="content">
             <div class="box">
-                <i class="fas fa-university fa-3x"></i>
+                <i class="fas fa-university fa-2x"></i>
                 <div>
                     <h4>Investment Banking</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil nam veritatis deserunt? Impedit, amet quasi!</p>
                 </div>
             </div>
             <div class="box">
-                <i class="fas fa-book-reader fa-3x"></i>
+                <i class="fas fa-book-reader fa-2x"></i>
                 <div>
                     <h4>Portfolio Management</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet laboriosam architecto voluptatum nesciunt explicabo est!</p>
                 </div>
             </div>
             <div class="box">
-                <i class="fas fa-pencil-alt fa-3x"></i>
+                <i class="fas fa-pencil-alt fa-2x"></i>
                 <div>
                     <h4>Text & Custodial</h4>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus dignissimos commodi totam libero nulla ipsum.</p>
@@ -66,7 +66,9 @@
 
     <!-- Who Section -->
     <section id="who-section">
-        <div class="group-pic"></div>
+        <div class="group-pic">
+            
+        </div>
         <div class="description">
             <h1><Span>Who</Span> We Are</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste vel rerum dolor iure expedita molestias sed error nostrum laboriosam nesciunt quas asperiores delectus, distinctio totam quam non omnis fugiat officiis!</p>
@@ -81,15 +83,72 @@
         </div>
     </section>
 
+    <div id="clients">
+        <h1>Our <span>Clients</span></h1>
+
+        <div class="logo">
+            <img src="./img/logo/logo1.png" alt="logo1">
+            <img src="./img/logo/logo2.png" alt="logo2">
+            <img src="./img/logo/logo3.png" alt="logo3">
+            <img src="./img/logo/logo4.png" alt="logo4">
+            <img src="./img/logo/logo5.png" alt="logo5">
+        </div>
+    </div>
+
     <!-- Contact Section -->
     <div id="contact-section">
+        <div class="contact-us">
+            <h1>Contact Us</h1>
+            <p>Please use the form below to contact us</p>
 
+            <form action="#">
+                <div>
+                    <label for="name">Name</label><br>
+                    <input type="text" name="name" id="name" placeholder="Enter Name">
+                </div>
+                <div>
+                    <label for="email">Email</label><br>
+                    <input type="email" name="email" id="email" placeholder="Enter Email">
+                </div>
+                <div>
+                    <label for="phone">Phone Number</label><br>
+                    <input type="number" name="number" id="number" placeholder="Enter Number">
+                </div>
+                <div>
+                    <label for="message">Message</label><br>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+                <button class="btn" type="submit">Send</button>
+            </form>
+        </div>
+
+        <div id="map">
+
+        </div>
+        
     </div>
 
     <!-- Footer Section -->
     <footer>
-
+        <p>Copyright &copy; 2020, EdgeLedger, All Rights Reserved</p>
     </footer>
+
+
+
+
+
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+    <!-- JS -->
+    <script src="main.js"></script>
+
+    <!-- Google Map -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8D91vFFDrWxKFFt5RCK-j0SwpQZHwU1M&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
 </body>
 
 </html>

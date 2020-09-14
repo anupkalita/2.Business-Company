@@ -9,7 +9,6 @@
 
 body{
     font-family: 'Roboto', sans-serif;
-    height: 1000px;
 }
 
 
@@ -25,7 +24,9 @@ header{
     justify-content: space-between;
     flex-wrap: wrap;
     background-color: #2b2d32;
-    position: sticky;
+    position: fixed;
+    top: 0;
+    width: 100%;
     z-index: 1;
 }
 
@@ -70,15 +71,22 @@ header{
 #landing-section{
     display: flex;
     justify-content: space-evenly;
-    height: 80%;
+    height: 100%;
     align-items: center;
     color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .text{
     text-align: center;
     line-height: 3rem;
     font-size: 1.5rem;
+    position: absolute;
+    
 }
 
 .text a{
@@ -105,13 +113,14 @@ header{
 }
 
 #what-section span{
- color: #89b700
+ color: #89b700;
 }
 
 .content{
     display: flex;
     justify-content: center;
     margin-bottom: 4rem;
+    flex-wrap: wrap;
 }
 
 .box{
@@ -123,13 +132,10 @@ header{
     text-align: justify;
 }
 
-.box div{
-    flex: 1;
-}
-
 .box i{
     background-color: #89b700;
     border-radius: 50%;
+    padding: 0.5rem;
     margin-right: 1rem;
 }
 
@@ -140,7 +146,11 @@ header{
 /*  Who Section */
 #who-section{
     display: flex;
-    height: 23rem;
+    /* height: 70vh; */
+    /* width: 100vw; */
+    /* justify-content: center; */
+    /* height: 23rem; */
+    flex-wrap: wrap;
 }
 
 #who-section div{
@@ -179,4 +189,129 @@ header{
 }
 
 
+/* Our Clients Section */
+#clients{
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+}
 
+#clients h1{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#clients span{
+    color: #89b700;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.logo img{
+    width: 10rem;
+    padding: 1rem;
+}
+
+
+
+
+/* Contact Section */
+#contact-section{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact-us{
+    flex: 1;
+    background-color: #89b700;
+    color: white;
+    padding: 2rem 1rem;
+}
+
+.contact-us h1, .contact-us p{
+    text-align: center;
+    line-height: 2rem;
+}
+#map{
+    flex: 2;
+}
+
+form div{
+    margin: 1rem 0;
+}
+
+form input{
+    width: 100%;
+    height: 2rem;
+    margin-top: 0.3rem;
+    border: 1px solid white;
+    border-radius: 0.2rem;
+    padding: 1rem;
+}
+
+form textarea{
+    width: 100%;
+    height: 2rem;
+    margin-top: 0.3rem;
+    border: 1px solid white;
+    border-radius: 0.2rem;
+}
+
+.btn{
+    width: 100%;
+    background: #2b2d32;
+    color: white;
+    border: none;
+    font-weight: bold;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+}
+
+.btn:hover{
+    background: #111113;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* Footer Section */
+footer{
+    background: #2b2d32;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+
+
+
+
+/* Media Queries */
+@media(max-width:500px){
+
+    #nav-bar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    #who-section{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: 1000px;
+    }
+
+    #contact-section{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: 1000px;
+    }
+}
